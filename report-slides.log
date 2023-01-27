@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=latex 2022.12.28)  27 JAN 2023 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=latex 2022.12.28)  27 JAN 2023 16:46
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1602,13 +1602,17 @@ LaTeX Info: Redefining \cite on input line 694.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/natbib/bibentry.sty
 Package: bibentry 2007/10/30 1.5 (PWD)
 )
-(/usr/local/texlive/2022/texmf-dist/tex/latex/gitinfo/gitinfo.sty
-Package: gitinfo 2011/08/10 v1.00 git revision information
+(/usr/local/texlive/2022/texmf-dist/tex/latex/gitinfo2/gitinfo2.sty
+Package: gitinfo2 2015/11/22 v2.0.7 git revision information
 
+(/usr/local/texlive/2022/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen411
+\ESO@tempdimb=\dimen412
+)
 
-Package gitInfo Warning: I can't find the file `gitHeadInfo.gin`.
-(gitInfo)                All git metadata has been set to ``(None)''. on input 
-line 57.
+Package gitinfo2 Warning: I can't find the file '.git/gitHeadInfo.gin'.
+(gitinfo2)                All git metadata has been set to '(None)'.
 
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
@@ -1631,9 +1635,9 @@ Package: ocgbase 2021/06/11 v0.20 support package for ocgx2.sty
 \g_ocgbase_nd_int=\count439
 )
 \l_mix_poster_box=\box113
-\g_mix_wd_dim=\dimen411
-\g_mix_ht_dim=\dimen412
-\g_mix_dp_dim=\dimen413
+\g_mix_wd_dim=\dimen413
+\g_mix_ht_dim=\dimen414
+\g_mix_dp_dim=\dimen415
 \g_mix_rmcnt_int=\count440
 \l_mix_viewcnt_int=\count441
 \g@mix@page@int=\count442
@@ -1641,7 +1645,7 @@ Package: ocgbase 2021/06/11 v0.20 support package for ocgx2.sty
 \l_mix_lineno_int=\count444
 \l_mix_pbtn_box=\box114
 \g_mix_mbtncnt_int=\count445
-\mix@btn@dim=\dimen414
+\mix@btn@dim=\dimen416
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/animate/animate.sty
 Package: animate 2022/02/21 PDF & SVG animations from files and inline graphics
@@ -1664,8 +1668,8 @@ Package zref Info: New property: abspage on input line 66.
 )
 \@anim@box=\box115
 \@anim@measbox=\box116
-\@anim@tmpdima=\dimen415
-\@anim@tmpdimb=\dimen416
+\@anim@tmpdima=\dimen417
+\@anim@tmpdimb=\dimen418
 \@anim@num=\count447
 \@anim@curframe=\count448
 \@anim@curframe@zb=\count449
@@ -1721,21 +1725,21 @@ ftex.tex)) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \c@tracingmulticols=\count461
 \mult@box=\box117
-\multicol@leftmargin=\dimen417
+\multicol@leftmargin=\dimen419
 \c@unbalance=\count462
 \c@collectmore=\count463
 \doublecol@number=\count464
 \multicoltolerance=\count465
 \multicolpretolerance=\count466
-\full@width=\dimen418
-\page@free=\dimen419
-\premulticols=\dimen420
-\postmulticols=\dimen421
+\full@width=\dimen420
+\page@free=\dimen421
+\premulticols=\dimen422
+\postmulticols=\dimen423
 \multicolsep=\skip100
 \multicolbaselineskip=\skip101
 \partial@page=\box118
 \last@line=\box119
-\maxbalancingoverflow=\dimen422
+\maxbalancingoverflow=\dimen424
 \mult@rightbox=\box120
 \mult@grightbox=\box121
 \mult@firstbox=\box122
@@ -1779,9 +1783,9 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \c@minrows=\count467
 \c@columnbadness=\count468
 \c@finalcolumnbadness=\count469
-\last@try=\dimen423
-\multicolovershoot=\dimen424
-\multicolundershoot=\dimen425
+\last@try=\dimen425
+\multicolovershoot=\dimen426
+\multicolundershoot=\dimen427
 \mult@nat@firstbox=\box160
 \colbreak@box=\box161
 \mc@col@check@num=\count470
@@ -1888,7 +1892,7 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 \t@pgfplots@toka=\toks69
 \t@pgfplots@tokb=\toks70
 \t@pgfplots@tokc=\toks71
-\pgfplots@tmpa=\dimen426
+\pgfplots@tmpa=\dimen428
 \c@pgfplots@coordindex=\count487
 \c@pgfplots@scanlineindex=\count488
 
@@ -1959,14 +1963,14 @@ x)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen427
-\pgfdecoratedremainingdistance=\dimen428
-\pgfdecoratedinputsegmentcompleteddistance=\dimen429
-\pgfdecoratedinputsegmentremainingdistance=\dimen430
-\pgf@decorate@distancetomove=\dimen431
+\pgfdecoratedcompleteddistance=\dimen429
+\pgfdecoratedremainingdistance=\dimen430
+\pgfdecoratedinputsegmentcompleteddistance=\dimen431
+\pgfdecoratedinputsegmentremainingdistance=\dimen432
+\pgf@decorate@distancetomove=\dimen433
 \pgf@decorate@repeatstate=\count492
-\pgfdecorationsegmentamplitude=\dimen432
-\pgfdecorationsegmentlength=\dimen433
+\pgfdecorationsegmentamplitude=\dimen434
+\pgfdecorationsegmentlength=\dimen435
 )
 \tikz@lib@dec@box=\box162
 )
@@ -1981,12 +1985,12 @@ brarydecorations.pathreplacing.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.contourlua.code.tex)
 \pgfplots@numplots=\count493
-\pgfplots@xmin@reg=\dimen434
-\pgfplots@xmax@reg=\dimen435
-\pgfplots@ymin@reg=\dimen436
-\pgfplots@ymax@reg=\dimen437
-\pgfplots@zmin@reg=\dimen438
-\pgfplots@zmax@reg=\dimen439
+\pgfplots@xmin@reg=\dimen436
+\pgfplots@xmax@reg=\dimen437
+\pgfplots@ymin@reg=\dimen438
+\pgfplots@ymax@reg=\dimen439
+\pgfplots@zmin@reg=\dimen440
+\pgfplots@zmax@reg=\dimen441
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -2011,14 +2015,14 @@ File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \lst@gtempboxa=\box163
 \lst@token=\toks73
 \lst@length=\count496
-\lst@currlwidth=\dimen440
+\lst@currlwidth=\dimen442
 \lst@column=\count497
 \lst@pos=\count498
-\lst@lostspace=\dimen441
-\lst@width=\dimen442
+\lst@lostspace=\dimen443
+\lst@width=\dimen444
 \lst@newlines=\count499
 \lst@lineno=\count500
-\lst@maxwidth=\dimen443
+\lst@maxwidth=\dimen445
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
@@ -2032,7 +2036,7 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 \pixel=\skip102
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 149.
+h' as default language. on input line 156.
 
 (./report-slides.aux
 
@@ -2062,47 +2066,47 @@ LaTeX Warning: Label `fig:OutAspect-target' multiply defined.
 )
 \openout1 = `report-slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 149.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 156.
 LaTeX Font Info:    Trying to load font information for FML+fncmi on input line
- 149.
+ 156.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 156.
 LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 
-149.
+156.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 156.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-149.
+156.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    ... okay on input line 156.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
@@ -2138,7 +2142,7 @@ LaTeX Font Info:    ... okay on input line 149.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 149.
+Package hyperref Info: Link coloring OFF on input line 156.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -2151,9 +2155,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count503
 )
-LaTeX Info: Redefining \ref on input line 149.
-LaTeX Info: Redefining \pageref on input line 149.
-LaTeX Info: Redefining \nameref on input line 149.
+LaTeX Info: Redefining \ref on input line 156.
+LaTeX Info: Redefining \pageref on input line 156.
+LaTeX Info: Redefining \nameref on input line 156.
  (./report-slides.bm) (./report-slides.bm)
 \openout3 = `report-slides.bm'.
 
@@ -2165,8 +2169,8 @@ Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 149.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 149.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 156.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 156.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-d
 ictionary-english.trsl
@@ -2174,19 +2178,19 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 149.
+or `english'. on input line 156.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 149.
+ on input line 156.
 
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 149.
+loading the todonotes package. on input line 156.
 
 \c@lstlisting=\count504
 [1
@@ -2677,12 +2681,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 53522 strings out of 478269
- 1188080 string characters out of 5846372
- 1717854 words of memory out of 5000000
- 70663 multiletter control sequences out of 15000+600000
+ 53728 strings out of 478269
+ 1191681 string characters out of 5846372
+ 1719996 words of memory out of 5000000
+ 70859 multiletter control sequences out of 15000+600000
  519840 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,15n,117p,2378b,1044s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,15n,117p,2378b,1046s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on report-slides.dvi (38 pages, 605700 bytes).
