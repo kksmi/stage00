@@ -52,7 +52,7 @@
 \usepackage{multirow}
 \usepackage{natbib}
 \usepackage{bibentry}
-\usepackage{gitinfo2}
+\usepackage{gitinfo}
 \usepackage{siunitx}
 \usepackage{nicefrac}
 %\usepackage{geometry}
@@ -146,10 +146,14 @@ basicstyle=\footnotesize\ttfamily}
 	{\todo[author=Sn,size=\tiny,inline,color=green!40]
 	{Shaoni has worked up to here.}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%\input{../../../.git/gitHeadInfo.gin}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % title
 % TODO: Customize to your Own Title, Name, Address
 %
+
 \title{Sales of Books Forecast}
 \author{
 Lin Jiahong
@@ -168,8 +172,6 @@ Last Changed by: \textsc{\gitCommitterName}\ \gitVtagn-\gitAbbrevHash\ (\gitAuth
 cf={Sales of Books Forecast},
 }
 
-
-\begin{document}
 
 \maketitle
 
