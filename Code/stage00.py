@@ -97,3 +97,52 @@ test_data.nunique()
 aggregated_train=train_data.groupby(["date"])["num_sold"].sum().reset_index()
 f,ax = plt.subplots(figsize=(20,10))
 sns.lineplot(data = aggregated_train, x="date", y="num_sold");
+
+#一周性特征
+fig, ax = plt.subplots(1, 2, figsize=(18, 5))
+ax = ax.flatten()
+dow=train_data.copy()
+dow["day_of_week"] = dow["date"].dt.dayofweek
+fig, ax = plt.subplots(1, 2, figsize=(18, 5))
+ax = ax.flatten()
+for i, store in enumerate(dow['store'].unique()):
+    dowf=dow.loc[dow["store"]==store].groupby([ "day_of_week"])["num_sold"].sum().reset_index()
+    sns.lineplot(data=dowf, x='day_of_week', y="num_sold", ax=ax[i])
+    ax[i].set_title(f'{store}')
+    if i!=1:
+        ax[i].legend().remove()
+plt.suptitle(f'Seasonality by week', fontsize=16)
+plt.tight_layout()
+
+#特征提取
+test_total_sales_df = test_data.groupby(["date"])["row_id"].first().reset_index().drop(columns="row_id")
+test_total_sales_dates = test_total_sales_df[["date"]]
+def get_date_features(df):
+    new_df = df.copy()
+    new_df["month"] = df["date"].dt.month
+    new_df["month_sin"] = np.sin(new_df['month'] * (2 * np.pi / 12))
+    new_df["month_cos"] = np.cos(new_df['month'] * (2 * np.pi / 12))
+    new_df["day_of_week"] = df["date"].dt.dayofweek
+    new_df["day_of_week"] = new_df["day_of_week"].apply(lambda x: 0 if x<=3 else(1 if x==4 else (2 if x==5 else (3))))
+    new_df["day_of_year"] = df["date"].dt.dayofyear
+    new_df["day_of_year"] = new_df.apply(lambda x: x["day_of_year"], axis=1)
+    new_df["important_dates"] = new_df["day_of_year"].apply(lambda x: x if x in [1,2,3,4,5,6,7,8,125,126,360,361,362,363,364,365] else 0)
+    new_df["year"] = df["date"].dt.year
+    new_df = new_df.drop(columns=["date","month","day_of_year"])
+    new_df = pd.get_dummies(new_df, columns = ["important_dates","day_of_week"], drop_first=True)
+    return new_df
+train_total_sales_df = get_date_features(train_data)
+train_total_sales_df=train_total_sales_df.drop(train_total_sales_df.columns[:4], axis=1)
+test_total_sales_df = get_date_features(test_total_sales_df)
+
+from sklearn.linear_model import Ridge
+y = train_total_sales_df["num_sold"]
+X = train_total_sales_df.drop(columns="num_sold")
+X_test = test_total_sales_df
+model = Ridge(tol=1e-2, max_iter=1000000, random_state=0)
+model.fit(X, y)
+preds = model.predict(X_test)
+test_total_sales_dates["num_sold"] = preds
+f,ax = plt.subplots(figsize=(20,10))
+train_data=pd.read_csv('train.csv',parse_dates=["date"])
+sns.lineplot(data = pd.concat([train_data,test_total_sales_dates]).reset_index(drop=True), x="date", y="num_sold");
