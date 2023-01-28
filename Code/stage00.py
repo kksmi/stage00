@@ -114,7 +114,9 @@ for i, store in enumerate(dow['store'].unique()):
 plt.suptitle(f'Seasonality by week', fontsize=16)
 plt.tight_layout()
 
+
 #特征提取
+train_total_data = train_data.groupby(["date"])["num_sold"].sum().reset_index()
 test_total_sales_df = test_data.groupby(["date"])["row_id"].first().reset_index().drop(columns="row_id")
 test_total_sales_dates = test_total_sales_df[["date"]]
 def get_date_features(df):
@@ -131,10 +133,10 @@ def get_date_features(df):
     new_df = new_df.drop(columns=["date","month","day_of_year"])
     new_df = pd.get_dummies(new_df, columns = ["important_dates","day_of_week"], drop_first=True)
     return new_df
-train_total_sales_df = get_date_features(train_data)
-train_total_sales_df=train_total_sales_df.drop(train_total_sales_df.columns[:4], axis=1)
-test_total_sales_df = get_date_features(test_total_sales_df)
+train_total_sales_df = get_date_features(train_total_data)
 
+test_total_sales_df = get_date_features(test_total_sales_df)
+#模型拟合训练
 from sklearn.linear_model import Ridge
 y = train_total_sales_df["num_sold"]
 X = train_total_sales_df.drop(columns="num_sold")
@@ -144,5 +146,35 @@ model.fit(X, y)
 preds = model.predict(X_test)
 test_total_sales_dates["num_sold"] = preds
 f,ax = plt.subplots(figsize=(20,10))
-train_data=pd.read_csv('train.csv',parse_dates=["date"])
-sns.lineplot(data = pd.concat([train_data,test_total_sales_dates]).reset_index(drop=True), x="date", y="num_sold");
+sns.lineplot(data = pd.concat([train_total_data,test_total_sales_dates]).reset_index(drop=True), x="date", y="num_sold",ci=None);
+
+#将19年一年中每日的商品比率赋予21年
+product_ratio_2019 = product_ratio_df.loc[product_ratio_df["date"].dt.year == 2019].copy()
+product_ratio_2019["mm-dd"] = product_ratio_2019["date"].dt.strftime('%m-%d')
+product_ratio_2019 = product_ratio_2019.drop(columns="date")
+test_product_ratio_df = train_data.copy()
+test_product_ratio_df["mm-dd"] = test_product_ratio_df["date"].dt.strftime('%m-%d')
+test_product_ratio_df = pd.merge(test_product_ratio_df,product_ratio_2019, how="left", on = ["mm-dd","product"])
+test_product_ratio_df.head()
+temp_df = pd.concat([product_ratio_df,test_product_ratio_df]).reset_index(drop=True)
+f,ax = plt.subplots(figsize=(20,10))
+sns.lineplot(data=temp_df, x="date", y="ratios", hue="product");
+
+#分开预测
+test_temp_df = pd.merge(test_data, test_total_sales_dates, how="left")
+test_temp_df["ratios"] = test_product_ratio_df["ratios"]
+def disaggregate_forecast(df):
+    new_df = df.copy()
+    stores_weights = train_data.groupby("store")["num_sold"].sum()/train_data["num_sold"].sum()
+    country_weights = pd.Series(index = test_temp_df["country"].unique(),data = 1/6)
+    for country in country_weights.index:
+        new_df.loc[(new_df["country"] == country), "num_sold"] = new_df.loc[(new_df["country"] == country), "num_sold"] *  country_weights[country]
+    for store in store_weights.index:
+        new_df.loc[new_df["store"] == store, "num_sold"] = new_df.loc[new_df["store"] == store, "num_sold"] * store_weights[store]
+    new_df["num_sold"] = new_df["num_sold"] * new_df["ratios"]
+    new_df["num_sold"] = new_df["num_sold"].round()
+    new_df = new_df.drop(columns=["ratios"])
+    return new_df
+
+final = disaggregate_forecast(test_temp_df)
+plot(pd.concat([train_data,final]).reset_index(drop=True))

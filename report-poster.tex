@@ -53,10 +53,9 @@
 \colorlet{backgroundcolor}{blue!10}
 
  % Title, Author, Institute
-\title{Group Outlying Aspects Mining}
-\author{Shaoni Wang$^1$, Gang Li$^2$}
-\institute{$^1$ Xi'an Shiyou University, China \\
-	$^2$ Deakin University, Australia
+\title{Sales of Books Forecasting}
+\author{Jiahong Lin$^1$,}
+\institute{$^1$ Nanjing University of Science and Technology, China
 }
 %\titlegraphic{logos/tulip-logo.eps}
 
@@ -96,81 +95,53 @@
 
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
 \block{Introduction}{
-    Many real world applications call for one important function
-    of identifying the set of features
-    on which the interested object is most distinguished from others.
-    Usually,
-    this object is termed as the query object,
-    and the set of features are referred to as the \emph{subspaces} or \emph{aspects}.
-    Accordingly,
-    this research problem is referred to as
-    \emph{outlying aspects mining},
-    which is different from \emph{outlier detection}.
+    Time series sales forecasting refers to the process of predicting future sales revenue for a certain period of time. This forecasting is typically based on historical sales data and uses statistical and machine learning algorithms to predict future sales trends.
+    This project is about the time series sales forecast of different commodities in different stores in different countries. This project requires to forecast the sales of six commodities in two stores in four countries in 2021 through the data from 2017 to 2020.
   	
   	\begin{description}
-  	\item[Outlying Aspects Mining] aims to identify a subspace
-    which makes the query object most outlying,
-    rather than verifying whether it is an outlier or not.
-    The task of \emph{Outlying Aspects Mining}
-    is to explain which aspects make the query object most different.
+  	\item[Time Series Aggregating] For the prediction of time series with complex factors, data analysis is required to combine the time series under different factors to simplify the prediction target.
   	
-  	\item[Outlier Detection] aims to identify all possible outliers in the dataset,
-    without explaining why or how they are different.
-    Hence,
-    the outlying aspects mining is also referred to
+  	\item[Feature extraction]The feature set of the training set is formed by extracting the existing features of the time points on the timeline of the past data, and then the future time points are predicted using the time point features.
     \emph{outlier interpretation}
     or \emph{object explanation}.
   	\end{description}
-
-  	In this paper,
-    we extend the task of \emph{outlying aspects mining} to the \emph{group} level,
-    formalize the research problem of \emph{group outlying aspects mining},
-    and propose a novel algorithm named GOAM to solve the
-    \emph{group outlying aspects mining} problem.
 }
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
 
 
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
-\block{Group Outlying Aspects Mining}{
+\block{Time Series Aggregating}{
 \begin{itemize}
     \item
     %\emph{Group Outlying Aspects Mining}
-    It aims to \emph{identify a subset of aspects (or subspace)
-    which makes the query group, rather than the single object,
-    obviously different}.
-    What we are interested in the task of \emph{group outlying aspects mining}
-    is to explain which aspects make the query group distinctive
-    different from the other groups.
+The purpose is to eliminate the complex factors caused by different countries, different stores and different products. Simplify the prediction target through data analysis.
 
     \item
-    \emph{Group Outlying Aspects Mining},
-    \emph{Outlying Aspects Mining} and
-    \emph{Outlier Detection} are different with each other.
+The analysis found that there is a fixed pattern in the proportion of sales of different products in different countries and different stores.
 \end{itemize}
 
 \begin{center}
     \begin{minipage}{0.3\linewidth}
     \centering
     \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Group Outlying Aspects Mining}}
+    \includegraphics[width=1.1\textwidth]{country-ratio.eps}
+    {\small{The trend of sales proportion in different countries}}
     \end{tikzfigure}%
     \end{minipage}
     \hfill
     \begin{minipage}{0.3\linewidth}
     \centering
     \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Outlying Aspects Mining}}
+    \includegraphics[width=1.1\textwidth]{store-ratio.eps}
+    {\small{The trend of sales proportion in different stores}}
     \end{tikzfigure}%
     \end{minipage}
     \hfill
     \begin{minipage}{0.3\linewidth}
     \centering
     \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Outlier Detection}}
+    \includegraphics[width=1.1\textwidth]{product-trend.eps}
+    {\small{The trend of sales proportion for different products}}
     \end{tikzfigure}%
     \end{minipage}
 \end{center}
@@ -189,64 +160,45 @@
 
 
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
-\block{GOAM Algorithm}{
-  	We propose the \emph{GOAM} algorithm to solve the research problem of
-    \emph{Group Outlying Aspects Mining}.
-  	The \emph{GOAM} algorithm includes three major steps.
+\block{Feature Extraction}{
+	Through the previous data analysis, it is found that the sales volume of stores and countries has a fixed proportion, while the sales volume of different products has a periodicity. Therefore, it is only necessary to predict
+	\begin{itemize}
+	\item the total sales volume of each day.
+	\item the sales volume of different products in each day of the year.
+	\end{itemize}
 %    1) Group Feature Extraction,
 %    2) Outlying Degree Scoring, and
 %    3) Outlying Aspects Identification.
-  	
+\begin{center}
+     \begin{minipage}{0.7\linewidth}
 \begin{tikzfigure}%[Overall architecture of \emph{GOAM} algorithm]
 %  \includegraphics[width=0.8\linewidth]{figures//framework.pdf}
-    \missingfigure[figcolor=white]{Testing figcolor}
+    \includegraphics[width=1.05\textwidth]{product.eps}
+{\small{Aggregated Time Series}}
 \end{tikzfigure}
-		
+		    \end{minipage}
+	    \end{center}
 \begin{description}
-  	\item[Group Feature Extraction]
-  	Let $f_1$, $f_2$, $f_3$ represent three features of $G_q$.
-    We count the frequency of each value for one feature.
-    Then use the histogram to represent each feature.
-    Similarly,
-    we can extract other features for each group.
+  	\item[Time Feature Extraction]
+Seasonal patterns in sales were discovered through observation. We extracted features such as the month of the year, the day of the week, and the day of the year from the time series.
 
 %    \item
 %    The histogram of $G_q$ on three features are as follows.
 \end{description}
 
 \begin{center}
-    \begin{minipage}{0.3\linewidth}
+    \begin{minipage}{0.75\linewidth}
     \centering
     \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Histogram of $G_q$ on $f_1$}}
+    \includegraphics[width=1.05\textwidth]{week-feature.eps}
+{\small{weekday feature}}
     \end{tikzfigure}%
     \end{minipage}
-    \hfill
-    \begin{minipage}{0.3\linewidth}
-    \centering
-    \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Histogram of $G_q$ on $f_2$}}
-    \end{tikzfigure}%
-    \end{minipage}
-    \hfill
-    \begin{minipage}{0.3\linewidth}
-    \centering
-    \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Histogram of $G_q$ on $f_3$}}
-    \end{tikzfigure}%
-    \end{minipage}
-\end{center}
+   
+\end{center}	
 \begin{description}
-\item[Outlying Degree Scoring]
-    In this step,
-    we first calculate the \emph{earth mover distance} (EMD) of one feature among different groups.
-    The earth mover distance reflects the minimum mean distance
-    between groups on one feature.
-    So,
-    we utilize the EMD to measure the difference between groups of each feature.
+\item We converted the monthly data into numerical values that are suitable for input into a Fourier transform. This allows us to perform a Fourier transform on the monthly data and obtain the coefficients of the various frequency components.
+\item we also took into account features related to the day of the week and important dates within the year.
 \end{description}
 }
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
@@ -257,108 +209,65 @@
  %Second column with first block's top edge aligned with with previous column's top.
 
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
-\block{GOAM Algorithm}{
+\block{Total Sales Forecasting}{
 \begin{description}
     \item
-    Second,
-    based on the \emph{earth move distance},
-    we calculate the outlying degree.
+   We use Ridge regression from the "linear\_model" module to correlate the relationship between sales and time features, and predict on the test set.
 \end{description}
+\begin{center}
+	\begin{minipage}{0.75\linewidth}
 
 \begin{tikzfigure}%[Overall architecture of \emph{GOAM} algorithm]
-    \missingfigure[figcolor=white]{Testing figcolor}
+    \centering
+    \includegraphics[width=1.05\textwidth]{total-sales.eps}
+{\small{weekday feature}}
 \end{tikzfigure}
-  where $G_q$ is the query group,
-  $n$ is the number of compare groups,
-  and $h_{k_s}$ is the histogram representation of $G_k$ in the subspace $s$.
 
-\begin{description}
-  	\item[Outlying Aspects Identification]
-    In this step,
-    based on the value of outlying degree
-    we will identify the group outlying aspects.
-    If a feature's outlying degree is greater than a threshold,
-    the more likely the feature is group outlying aspect.
-    When the dimensionality of features is high,
-    we adopt a stage-wise candidate subspace construction strategy to
-    alleviate the exponential explosion.
-\end{description}
+    \end{minipage}
+
+\end{center}	
+
 }
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
 % Second column - first block
 
 
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
-\block[titleleft]{Experiment}
+\block[titleleft]{Specific Sales Forecast}
 {
 \begin{description}
-  	\item[Synthetic Dataset] contains $10$ groups and $8$ features.
-    Each group consists of $10$ members,
-    and each member has $8$ features.
+  	\item[Product Ratio Forecast] We found that the proportion of sales for a product has a cyclical variation with a period of two years. Therefore, we assign the daily proportion of sales for each product in 2019 to 2021.
 \end{description}
 \vspace{.5cm}
-\begin{tabular}{ c | c | c | c }
-    \toprule
-    Method     &  Truth Outlying Aspects    & Identified Aspects & Accuracy      \\
-    \midrule
-    GOAM       &  $\{F_1\}$, $\{F_2F_4\}$   &  $\{F_1\}$, $\{F_2F_4\}$    & 100\%    \\
+\begin{center}
+	\begin{minipage}{0.75\linewidth}
+		\centering
+\begin{tikzfigure}%[Overall architecture of \emph{GOAM} algorithm]
+	\includegraphics[width=1.1\textwidth]{product-ratio-for.eps}
+	{\small{Product Ratio Forecast}}
+\end{tikzfigure}
+    \end{minipage}
 
-     Arithmetic Mean based OAM &  $\{F_1\}$, $\{F_2F_4\}$   &  $\{F_4\}$, $\{F_2\}$    &  0\% \\
-
-     Median based OAM &  $\{F_1\}$, $\{F_2F_4\}$   &  $\{F_2\}$, $\{F_4\}$    &           0\% \\
-     \bottomrule
-\end{tabular}
-\vspace{.2cm}
-\begin{description}
-    \item
-    It can be observed that the GOAM method can identify the trivial outlying features
-    and non-trivial outlying subspaces correctly and is obvious from the table
-    that the accuracy of GOAM is the best, which is ($100\%$).
-\end{description}
+\end{center}	
 
 \begin{description}
-\item[NBA Dataset] was collected from Yahoo Sports
-website (\url{http://sports.yahoo.com.cn/nba}).
-The data include all teams from the six divisions,
-and each player in the team has $12$ features.
+\item[Country and Store Ratio Forecast] 
+\begin{itemize}
+\item we assume that the proportion of sales in various countries in 2021 is the same as in 2020. In 2020, the proportion of sales in various countries is the same, each accounting for 1/6.
+\item The proportion of different stores remains fixed, KaggleMart accounts for 75\%, and KaggleRama accounts for 25\%.
+\end{itemize}
 \end{description}
-\vspace{.5cm}
-\begin{tabular}{ c | c | c }
-    \toprule
-    Teams                   & Trivial Outlying Aspects  & NonTrivial Outlying Aspects    \\
-    \toprule
-    Cleveland Cavaliers     & \{3FA\}                   & \{FGA, FT\%\}, \{FGA, FG\%\} \\
-    Orlando Magic           & \{Stl\}                   & None                         \\
-    Milwaukee Bucks         & \{To\}, \{FTA\}           & \{FGA, FTA\}, \{3FA, FTA\}     \\
-%    Golden State Warriors   & \{FG\%\}                  & \{FT\%, Blk\}, \{FGA, 3PT\%, FTA\}\\
-%    Utah Jazz               & \{Blk\}                   & \{3FA, 3PT\%\}                    \\
-    New Orleans Pelicans    & \{FT\%\}, \{FTA\}         & \{FTA, Stl\}, \{FTA, To\}          \\
-    \bottomrule
-\end{tabular}
-           
+
+
+           \begin{center}
 \begin{minipage}{0.5\linewidth}
     \centering
     \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-
-    {\small{New Orleans Pelicans on FT\%}}
+	\includegraphics[width=1.05\textwidth]{final-for.eps}
+{\small{Final Forecasting}}
     \end{tikzfigure}%
 \end{minipage}
-\hfill
-\begin{minipage}{0.5\linewidth}
-    \centering
-    \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-
-    {\small{New Orleans Pelicans on FTA}}
-    \end{tikzfigure}%
-\end{minipage}
-\vspace{.2cm}
-\begin{description}
-\item
-\texttt{New Orleans Pelicans} has more players with
-lower \{free throw percentage\}, \{free throws attempted\}.
-\end{description}
+\end{center}
 }
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
 
@@ -370,14 +279,13 @@ lower \{free throw percentage\}, \{free throws attempted\}.
 {
 \begin{description}
   \item[Problem Definition]
-  Formalize the problem of Group Outlying Aspects Mining by extending outlying aspects mining.
-
-  \item[GOAM algorithm]
-  Propose GOAM algorithm to solve the \emph{Group}\\
-  \emph{Outlying Aspects Mining} problem.
+  This is a time series forecasting problem that includes complex elements.
 
   \item[Strategies]
-  Utilize the pruning strategies to \\ reduce time complexity.
+  Simplifying the effects of complex factors through analyzing patterns discovered through single factor analysis.
+  
+    \item[Prediction method]
+Use linear regression method to predict the relationship between sales volume and time characteristics.
 \end{description}
 }
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
@@ -385,18 +293,7 @@ lower \{free throw percentage\}, \{free throws attempted\}.
 
 % Bottomblock
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
-\colorlet{notebgcolor}{blue!20}
-\colorlet{notefrcolor}{blue!20}
-\note[targetoffsetx=8cm, targetoffsety=-4cm, angle=30, rotate=15,
-radius=2cm, width=.26\textwidth]{
-Acknowledgement
-\begin{itemize}
-    \item
-    International Cooperation Project (Y7Z0511101)
-    of IIE,
-    Chinese Academy of Sciences
- \end{itemize}
-}
+
 
 %\note[targetoffsetx=8cm, targetoffsety=-10cm,rotate=0,angle=180,radius=8cm,width=.46\textwidth,innersep=.1cm]{
 %Acknowledgement
