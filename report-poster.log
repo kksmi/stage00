@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.28)  28 JAN 2023 23:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.28)  29 JAN 2023 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1425,26 +1425,22 @@ Overfull \hbox (32.26772pt too wide) in paragraph at lines 148--148
  [] 
  []
 
-Package epstopdf Info: Source file: <product.eps>
-(epstopdf)                    date: 2023-01-17 16:34:34
-(epstopdf)                    size: 4662788 bytes
-(epstopdf)             Output file: <product-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-01-28 23:34:12
-(epstopdf)                    size: 224025 bytes
-(epstopdf)             Command: <repstopdf --outfile=product-eps-converted-to.p
-df product.eps>
+Package epstopdf Info: Source file: <trainline.eps>
+(epstopdf)                    date: 2023-01-17 16:34:35
+(epstopdf)                    size: 4258047 bytes
+(epstopdf)             Output file: <trainline-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-01-29 10:01:05
+(epstopdf)                    size: 121674 bytes
+(epstopdf)             Command: <repstopdf --outfile=trainline-eps-converted-to
+.pdf trainline.eps>
 (epstopdf)             \includegraphics on input line 203.
 Package epstopdf Info: Output file is already uptodate.
-<product-eps-converted-to.pdf, id=48, 1406.25375pt x 549.05125pt>
-File: product-eps-converted-to.pdf Graphic file (type pdf)
-<use product-eps-converted-to.pdf>
-Package pdftex.def Info: product-eps-converted-to.pdf  used on input line 203.
-(pdftex.def)             Requested size: 790.50179pt x 308.6395pt.
-
-Overfull \hbox (37.64513pt too wide) in paragraph at lines 203--203
- [] 
- []
-
+<trainline-eps-converted-to.pdf, id=48, 1188.44pt x 593.21625pt>
+File: trainline-eps-converted-to.pdf Graphic file (type pdf)
+<use trainline-eps-converted-to.pdf>
+Package pdftex.def Info: trainline-eps-converted-to.pdf  used on input line 203
+.
+(pdftex.def)             Requested size: 677.56639pt x 338.2273pt.
 Package epstopdf Info: Source file: <week-feature.eps>
 (epstopdf)                    date: 2023-01-28 23:33:46
 (epstopdf)                    size: 34895 bytes
@@ -1523,9 +1519,9 @@ File: final-for-eps-converted-to.pdf Graphic file (type pdf)
 <use final-for-eps-converted-to.pdf>
 Package pdftex.def Info: final-for-eps-converted-to.pdf  used on input line 271
 .
-(pdftex.def)             Requested size: 564.01659pt x 426.82306pt.
+(pdftex.def)             Requested size: 590.87608pt x 447.14398pt.
 
-Overfull \hbox (26.85948pt too wide) in paragraph at lines 271--271
+Overfull \hbox (53.71898pt too wide) in paragraph at lines 271--271
  [] 
  []
 
@@ -1562,17 +1558,17 @@ Overfull \hbox (5.52335pt too wide) in paragraph at lines 331--331
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./count
 ry-ratio-eps-converted-to.pdf> <./store-ratio-eps-converted-to.pdf> <./product-
-trend-eps-converted-to.pdf> <./product-eps-converted-to.pdf> <./week-feature-ep
-s-converted-to.pdf> <./total-sales-eps-converted-to.pdf> <./product-ratio-for-e
-ps-converted-to.pdf> <./final-for-eps-converted-to.pdf> <./graphics/logos/tulip
--wordmark-eps-converted-to.pdf>] (./report-poster.aux)
+trend-eps-converted-to.pdf> <./trainline-eps-converted-to.pdf> <./week-feature-
+eps-converted-to.pdf> <./total-sales-eps-converted-to.pdf> <./product-ratio-for
+-eps-converted-to.pdf> <./final-for-eps-converted-to.pdf> <./graphics/logos/tul
+ip-wordmark-eps-converted-to.pdf>] (./report-poster.aux)
 Package rerunfilecheck Info: File `report-poster.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  28919 strings out of 478268
- 589224 string characters out of 5846346
- 1083773 words of memory out of 5000000
+ 589238 string characters out of 5846346
+ 1083840 words of memory out of 5000000
  46539 multiletter control sequences out of 15000+600000
  561192 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1585,7 +1581,7 @@ e/2022/texmf-dist/fonts/enc/dvips/kurier/ec-kurier.enc}</usr/local/texlive/2022
 /texmf-dist/fonts/type1/nowacki/kurier/kurierb.pfb></usr/local/texlive/2022/tex
 mf-dist/fonts/type1/nowacki/kurier/kurierr.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/nowacki/kurier/kurierri.pfb>
-Output written on report-poster.pdf (1 page, 1631385 bytes).
+Output written on report-poster.pdf (1 page, 1529054 bytes).
 PDF statistics:
  131 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream

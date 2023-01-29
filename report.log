@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.28)  28 DEC 2022 13:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.28)  29 JAN 2023 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1214,11 +1214,11 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen336
 \ESO@tempdimb=\dimen337
 )
-
-Package gitinfo2 Warning: I can't find the file '.git/gitHeadInfo.gin'.
-(gitinfo2)                All git metadata has been set to '(None)'.
-
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(./.git/gitHeadInfo.gin)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/gitinfo2/gitexinfo.sty
+Package: gitexinfo 2015/11/22 v2.0.7 Auxiliary package for gitinfo2
+))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
 rs
 \f@nch@headwidth=\skip90
@@ -1431,11 +1431,11 @@ Including 'ConferenceOnly' comment.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package epstopdf Info: Source file: <./graphics/logos/tulip-logo.eps>
-(epstopdf)                    date: 2022-07-23 14:29:12
+(epstopdf)                    date: 2023-01-17 16:34:34
 (epstopdf)                    size: 1059122 bytes
 (epstopdf)             Output file: <./graphics/logos/tulip-logo-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2022-12-28 13:22:58
+(epstopdf)                    date: 2023-01-17 16:34:34
 (epstopdf)                    size: 21448 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphics/logos/tulip-log
 o-eps-converted-to.pdf ./graphics/logos/tulip-logo.eps>
@@ -1456,11 +1456,11 @@ Package fancyhdr Warning: \footskip is too small (12.0pt):
 
 [2 <./graphics/logos/tulip-logo-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./graphics/logos/tulip-logo.eps>
-(epstopdf)                    date: 2022-07-23 14:29:12
+(epstopdf)                    date: 2023-01-17 16:34:34
 (epstopdf)                    size: 1059122 bytes
 (epstopdf)             Output file: <./graphics/logos/tulip-logo-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2022-12-28 13:22:58
+(epstopdf)                    date: 2023-01-17 16:34:34
 (epstopdf)                    size: 21448 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphics/logos/tulip-log
 o-eps-converted-to.pdf ./graphics/logos/tulip-logo.eps>
@@ -1653,11 +1653,11 @@ count.1}) has been already used, duplicate ignored
 l.194 
       
 Package epstopdf Info: Source file: <./graphics/logos/tulip-logo.eps>
-(epstopdf)                    date: 2022-07-23 14:29:12
+(epstopdf)                    date: 2023-01-17 16:34:34
 (epstopdf)                    size: 1059122 bytes
 (epstopdf)             Output file: <./graphics/logos/tulip-logo-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2022-12-28 13:22:58
+(epstopdf)                    date: 2023-01-17 16:34:34
 (epstopdf)                    size: 21448 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphics/logos/tulip-log
 o-eps-converted-to.pdf ./graphics/logos/tulip-logo.eps>
@@ -1706,20 +1706,20 @@ count.2}) has been already used, duplicate ignored
 l.198 
       ])
 Package epstopdf Info: Source file: <./graphics/logos/tulip-logo.eps>
-(epstopdf)                    date: 2022-07-23 14:29:12
+(epstopdf)                    date: 2023-01-17 16:34:34
 (epstopdf)                    size: 1059122 bytes
 (epstopdf)             Output file: <./graphics/logos/tulip-logo-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2022-12-28 13:22:58
+(epstopdf)                    date: 2023-01-17 16:34:34
 (epstopdf)                    size: 21448 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphics/logos/tulip-log
 o-eps-converted-to.pdf ./graphics/logos/tulip-logo.eps>
-(epstopdf)             \includegraphics on input line 63.
+(epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 File: ./graphics/logos/tulip-logo-eps-converted-to.pdf Graphic file (type pdf)
 <use ./graphics/logos/tulip-logo-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphics/logos/tulip-logo-eps-converted-to.pdf  used
- on input line 63.
+ on input line 52.
 (pdftex.def)             Requested size: 7.92348pt x 10.79993pt.
 
 
@@ -1731,28 +1731,21 @@ Package fancyhdr Warning: \footskip is too small (12.0pt):
 \tf@tdo=\write8
 \openout8 = `report.tdo'.
 
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 Package epstopdf Info: Source file: <./graphics/logos/tulip-logo.eps>
-(epstopdf)                    date: 2022-07-23 14:29:12
+(epstopdf)                    date: 2023-01-17 16:34:34
 (epstopdf)                    size: 1059122 bytes
 (epstopdf)             Output file: <./graphics/logos/tulip-logo-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2022-12-28 13:22:58
+(epstopdf)                    date: 2023-01-17 16:34:34
 (epstopdf)                    size: 21448 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphics/logos/tulip-log
 o-eps-converted-to.pdf ./graphics/logos/tulip-logo.eps>
-(epstopdf)             \includegraphics on input line 71.
+(epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 File: ./graphics/logos/tulip-logo-eps-converted-to.pdf Graphic file (type pdf)
 <use ./graphics/logos/tulip-logo-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphics/logos/tulip-logo-eps-converted-to.pdf  used
- on input line 71.
+ on input line 60.
 (pdftex.def)             Requested size: 7.92348pt x 10.79993pt.
 
 
@@ -1761,40 +1754,17 @@ Package fancyhdr Warning: \footskip is too small (12.0pt):
 (fancyhdr)                \setlength{\footskip}{14.79996pt}.
 
 [6]
-Package epstopdf Info: Source file: <./graphics/logos/tulip-logo.eps>
-(epstopdf)                    date: 2022-07-23 14:29:12
-(epstopdf)                    size: 1059122 bytes
-(epstopdf)             Output file: <./graphics/logos/tulip-logo-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2022-12-28 13:22:58
-(epstopdf)                    size: 21448 bytes
-(epstopdf)             Command: <repstopdf --outfile=./graphics/logos/tulip-log
-o-eps-converted-to.pdf ./graphics/logos/tulip-logo.eps>
-(epstopdf)             \includegraphics on input line 71.
-Package epstopdf Info: Output file is already uptodate.
-File: ./graphics/logos/tulip-logo-eps-converted-to.pdf Graphic file (type pdf)
-<use ./graphics/logos/tulip-logo-eps-converted-to.pdf>
-Package pdftex.def Info: ./graphics/logos/tulip-logo-eps-converted-to.pdf  used
- on input line 71.
-(pdftex.def)             Requested size: 7.92348pt x 10.79993pt.
-
-
-Package fancyhdr Warning: \footskip is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.79996pt, for example:
-(fancyhdr)                \setlength{\footskip}{14.79996pt}.
-
-[7]
 No complaints by nag.
 (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D59CCAC13BF91EB59662DE691E29DCDE;967.
  ) 
 Here is how much of TeX's memory you used:
- 39117 strings out of 478268
- 792421 string characters out of 5846346
- 1228576 words of memory out of 5000000
- 56340 multiletter control sequences out of 15000+600000
- 480396 words of font info for 116 fonts, out of 8000000 for 9000
+ 39159 strings out of 478268
+ 793306 string characters out of 5846346
+ 1230509 words of memory out of 5000000
+ 56385 multiletter control sequences out of 15000+600000
+ 480228 words of font info for 115 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  120i,15n,134p,1003b,983s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -1813,12 +1783,11 @@ e/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive
 022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
 22/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2022/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (7 pages, 262789 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on report.pdf (6 pages, 254449 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 27218 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 252 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 26706 words of extra memory for PDF output out of 29859 (max. 10000000)
 

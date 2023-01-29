@@ -127,7 +127,6 @@ def get_date_features(df):
     new_df["day_of_week"] = df["date"].dt.dayofweek
     new_df["day_of_week"] = new_df["day_of_week"].apply(lambda x: 0 if x<=3 else(1 if x==4 else (2 if x==5 else (3))))
     new_df["day_of_year"] = df["date"].dt.dayofyear
-    new_df["day_of_year"] = new_df.apply(lambda x: x["day_of_year"], axis=1)
     new_df["important_dates"] = new_df["day_of_year"].apply(lambda x: x if x in [1,2,3,4,5,6,7,8,125,126,360,361,362,363,364,365] else 0)
     new_df["year"] = df["date"].dt.year
     new_df = new_df.drop(columns=["date","month","day_of_year"])

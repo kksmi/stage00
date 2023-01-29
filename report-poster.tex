@@ -163,8 +163,8 @@ The analysis found that there is a fixed pattern in the proportion of sales of d
 \block{Feature Extraction}{
 	Through the previous data analysis, it is found that the sales volume of stores and countries has a fixed proportion, while the sales volume of different products has a periodicity. Therefore, it is only necessary to predict
 	\begin{itemize}
-	\item the total sales volume of each day.
-	\item the sales volume of different products in each day of the year.
+	\item \textcolor{red}{the total sales volume of each day.}
+	\item \textcolor{red}{the sales volume of different products in each day of the year.}
 	\end{itemize}
 %    1) Group Feature Extraction,
 %    2) Outlying Degree Scoring, and
@@ -173,7 +173,7 @@ The analysis found that there is a fixed pattern in the proportion of sales of d
      \begin{minipage}{0.7\linewidth}
 \begin{tikzfigure}%[Overall architecture of \emph{GOAM} algorithm]
 %  \includegraphics[width=0.8\linewidth]{figures//framework.pdf}
-    \includegraphics[width=1.05\textwidth]{product.eps}
+    \includegraphics[width=0.9\textwidth]{trainline.eps}
 {\small{Aggregated Time Series}}
 \end{tikzfigure}
 		    \end{minipage}
@@ -220,7 +220,7 @@ Seasonal patterns in sales were discovered through observation. We extracted fea
 \begin{tikzfigure}%[Overall architecture of \emph{GOAM} algorithm]
     \centering
     \includegraphics[width=1.05\textwidth]{total-sales.eps}
-{\small{weekday feature}}
+{\small{total sales forecasting}}
 \end{tikzfigure}
 
     \end{minipage}
@@ -236,7 +236,7 @@ Seasonal patterns in sales were discovered through observation. We extracted fea
 \block[titleleft]{Specific Sales Forecast}
 {
 \begin{description}
-  	\item[Product Ratio Forecast] We found that the proportion of sales for a product has a cyclical variation with a period of two years. Therefore, we assign the daily proportion of sales for each product in 2019 to 2021.
+  	\item[Product Ratio Forecast]   We found that the proportion of sales for a product has a cyclical variation with a period of two years. Therefore, we assign the daily proportion of sales for each product in 2019 to 2021.
 \end{description}
 \vspace{.5cm}
 \begin{center}
@@ -251,7 +251,7 @@ Seasonal patterns in sales were discovered through observation. We extracted fea
 \end{center}	
 
 \begin{description}
-\item[Country and Store Ratio Forecast] 
+\item[Country and Store Ratio Forecast]
 \begin{itemize}
 \item we assume that the proportion of sales in various countries in 2021 is the same as in 2020. In 2020, the proportion of sales in various countries is the same, each accounting for 1/6.
 \item The proportion of different stores remains fixed, KaggleMart accounts for 75\%, and KaggleRama accounts for 25\%.
@@ -263,7 +263,7 @@ Seasonal patterns in sales were discovered through observation. We extracted fea
 \begin{minipage}{0.5\linewidth}
     \centering
     \begin{tikzfigure}
-	\includegraphics[width=1.05\textwidth]{final-for.eps}
+	\includegraphics[width=1.1\textwidth]{final-for.eps}
 {\small{Final Forecasting}}
     \end{tikzfigure}%
 \end{minipage}

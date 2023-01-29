@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=latex 2022.12.28)  27 JAN 2023 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=latex 2022.12.28)  29 JAN 2023 13:45
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -2036,9 +2036,24 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 \pixel=\skip102
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 156.
+h' as default language. on input line 174.
 
 (./report-slides.aux
+
+LaTeX Warning: Label `fig:OutAspect-target' multiply defined.
+
+
+LaTeX Warning: Label `fig:OutAspect-target' multiply defined.
+
+
+LaTeX Warning: Label `fig:OutAspect-target' multiply defined.
+
+
+LaTeX Warning: Label `fig:OutAspect-target' multiply defined.
+
+
+LaTeX Warning: Label `fig:OutAspect-target' multiply defined.
+
 
 LaTeX Warning: Label `fig:OutAspect-target' multiply defined.
 
@@ -2066,47 +2081,47 @@ LaTeX Warning: Label `fig:OutAspect-target' multiply defined.
 )
 \openout1 = `report-slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 156.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 174.
 LaTeX Font Info:    Trying to load font information for FML+fncmi on input line
- 156.
+ 174.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 174.
 LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 
-156.
+174.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 174.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-156.
+174.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    ... okay on input line 174.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
@@ -2142,7 +2157,7 @@ LaTeX Font Info:    ... okay on input line 156.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 156.
+Package hyperref Info: Link coloring OFF on input line 174.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -2155,9 +2170,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count503
 )
-LaTeX Info: Redefining \ref on input line 156.
-LaTeX Info: Redefining \pageref on input line 156.
-LaTeX Info: Redefining \nameref on input line 156.
+LaTeX Info: Redefining \ref on input line 174.
+LaTeX Info: Redefining \pageref on input line 174.
+LaTeX Info: Redefining \nameref on input line 174.
  (./report-slides.bm) (./report-slides.bm)
 \openout3 = `report-slides.bm'.
 
@@ -2169,8 +2184,8 @@ Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 156.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 156.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 174.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 174.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-d
 ictionary-english.trsl
@@ -2178,19 +2193,19 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 156.
+or `english'. on input line 174.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 156.
+ on input line 174.
 
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 156.
+loading the todonotes package. on input line 174.
 
 \c@lstlisting=\count504
 [1
@@ -2343,229 +2358,46 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [16] [17]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 540.
-
+File: trainline.eps Graphic file (type eps)
+ <trainline.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 540.
+(caption)                particular \caption on input line 518.
 See the caption package documentation for explanation.
 
 [18]
-Overfull \hbox (31.3592pt too wide) in paragraph at lines 604--604
-[][]\T1/fnc/m/n/14.4 14ptTest.  
- []
-
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 604.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 604.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 604.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 604.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 604.
-Missing character: There is no ^^L in font fourier-mex!
-
-Overfull \hbox (31.3592pt too wide) in paragraph at lines 604--604
-[][]\T1/fnc/m/n/14.4 14ptTest.  
- []
-
-
-Overfull \hbox (31.3592pt too wide) in paragraph at lines 604--604
-[][]\T1/fnc/m/n/14.4 14ptTest.  
- []
-
+File: week-feature.eps Graphic file (type eps)
+ <week-feature.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 604.
+(caption)                particular \caption on input line 539.
 See the caption package documentation for explanation.
 
-Missing character: There is no ^^L in font fourier-mex!
-[19]
+[19] [20] [21]
+File: total-sales.eps Graphic file (type eps)
+ <total-sales.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 649.
+(caption)                particular \caption on input line 612.
 See the caption package documentation for explanation.
 
-
-Overfull \hbox (21.00186pt too wide) in paragraph at lines 649--649
-[][] 
- []
-
-[20] [21] [22] [23]
+[22]
+File: product-ratio-for.eps Graphic file (type eps)
+ <product-ratio-for.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 806.
+(caption)                particular \caption on input line 630.
 See the caption package documentation for explanation.
 
-[24]
+[23]
+File: final-for.eps Graphic file (type eps)
+ <final-for.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 873.
+(caption)                particular \caption on input line 645.
 See the caption package documentation for explanation.
 
-[25] [26] [27]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 946.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 946.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 946.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 946.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 946.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 946.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 946.
-
-Missing character: There is no ^^L in font fourier-mex!
-[28]
-Missing character: There is no ^^L in font fourier-mex!
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1000.
-See the caption package documentation for explanation.
-
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 9.29993pt on input line 1000.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 7.43994pt on input line 1000.
-[29]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1045.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (4.66704pt too wide) in paragraph at lines 1045--1045
- [][] 
- []
-
-[30]
-
-Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 1085.
-
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 1085.
-[31]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1125.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (3.4126pt too wide) in paragraph at lines 1125--1125
-[]|\T1/fnc/m/n/14.4 FGA| 
- []
-
-
-Overfull \hbox (4.8991pt too wide) in paragraph at lines 1125--1125
-[]|\T1/fnc/m/n/14.4 FG%| 
- []
-
-
-Overfull \hbox (10.85841pt too wide) in paragraph at lines 1125--1125
-[]|\T1/fnc/m/n/14.4 3PT%| 
- []
-
-
-Overfull \hbox (1.68515pt too wide) in paragraph at lines 1125--1125
-[]|\T1/fnc/m/n/14.4 FTA| 
- []
-
-
-Overfull \hbox (3.41261pt too wide) in paragraph at lines 1125--1125
-[]|\T1/fnc/m/n/14.4 FT%| 
- []
-
-
-Overfull \hbox (7.89871pt too wide) in paragraph at lines 1125--1125
-[]|\T1/fnc/m/n/14.4 14.07| 
- []
-
-
-Overfull \hbox (7.89871pt too wide) in paragraph at lines 1125--1125
-[]|\T1/fnc/m/n/14.4 10.59| 
- []
-
-
-Overfull \hbox (7.89871pt too wide) in paragraph at lines 1125--1125
-[]|\T1/fnc/m/n/14.4 10.93| 
- []
-
-
-Overfull \hbox (7.89871pt too wide) in paragraph at lines 1125--1125
-[]|\T1/fnc/m/n/14.4 10.39| 
- []
-
-[32]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1175.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (7.85661pt too wide) in paragraph at lines 1175--1175
-[]|\T1/fnc/m/n/14.4 (0.35,0.45]| 
- []
-
-
-Overfull \hbox (6.10127pt too wide) in paragraph at lines 1175--1175
-[]|\T1/fnc/m/n/14.4 (0.3,0.35]| 
- []
-
-
-Overfull \hbox (1.67804pt too wide) in paragraph at lines 1175--1175
-[]|\T1/fnc/m/n/14.4 (3.5,$+\FMS/fncm/m/n/14.4 1$\T1/fnc/m/n/14.4 ]| 
- []
-
-
-Overfull \hbox (1.67804pt too wide) in paragraph at lines 1175--1175
-[]|\T1/fnc/m/n/14.4 (2.5,$+\FMS/fncm/m/n/14.4 1$\T1/fnc/m/n/14.4 ]| 
- []
-
-
-Overfull \hbox (6.10127pt too wide) in paragraph at lines 1175--1175
-[]|\T1/fnc/m/n/14.4 (0.25,0.5]| 
- []
-
-
-Overfull \hbox (7.85661pt too wide) in paragraph at lines 1175--1175
-[]|\T1/fnc/m/n/14.4 (0.65,0.75]| 
- []
-
-
-Overfull \hbox (6.10127pt too wide) in paragraph at lines 1175--1175
-[]|\T1/fnc/m/n/14.4 (0.6,0.75]| 
- []
-
-
-Overfull \hbox (1.67804pt too wide) in paragraph at lines 1175--1175
-[]|\T1/fnc/m/n/14.4 (1.7,$+\FMS/fncm/m/n/14.4 1$\T1/fnc/m/n/14.4 ]| 
- []
-
-
-Overfull \hbox (9.12384pt too wide) in paragraph at lines 1175--1175
-[]|\T1/fnc/m/n/14.4 (0.75,$+\FMS/fncm/m/n/14.4 1$\T1/fnc/m/n/14.4 ]| 
- []
-
-
-Overfull \hbox (1.67804pt too wide) in paragraph at lines 1175--1175
-[]|\T1/fnc/m/n/14.4 (0.7,$+\FMS/fncm/m/n/14.4 1$\T1/fnc/m/n/14.4 ]| 
- []
-
-[33]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1212.
-See the caption package documentation for explanation.
-
-[34] [35] [36]
+[24] [25] [26]
 File: ./graphics//gif//question//q_1.eps Graphic file (type eps)
  <./graphics//gif//question//q_1.eps> <a0,fr0>
 File: ./graphics//gif//question//q_2.eps Graphic file (type eps)
@@ -2654,25 +2486,25 @@ File: ./graphics//gif//question//q_29.eps Graphic file (type eps)
 <./graphics//gif//question//q_29.eps> <a0,fr28>
 File: ./graphics//gif//question//q_30.eps Graphic file (type eps)
 
-<./graphics//gif//question//q_30.eps> <a0,fr29> [37]
+<./graphics//gif//question//q_30.eps> <a0,fr29> [27]
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 1298.
+(enumitem)                sense, on input line 713.
 
 LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inp
-ut line 1298.
+ut line 713.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
 
 LaTeX Font Warning: Font shape `U/fontawesometwo/b/n' undefined
-(Font)              using `U/fontawesometwo/m/n' instead on input line 1298.
+(Font)              using `U/fontawesometwo/m/n' instead on input line 713.
 
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 13.39188pt on input line 1298.
+(Font)              scaled to size 13.39188pt on input line 713.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 1298.
-[38] (./report-slides.aux)
+(Font)              scaled to size 9.29993pt on input line 713.
+[28] (./report-slides.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2681,12 +2513,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 53778 strings out of 478269
- 1192672 string characters out of 5846372
- 1721973 words of memory out of 5000000
- 70909 multiletter control sequences out of 15000+600000
- 519840 words of font info for 110 fonts, out of 8000000 for 9000
+ 53687 strings out of 478269
+ 1191240 string characters out of 5846372
+ 1714009 words of memory out of 5000000
+ 70817 multiletter control sequences out of 15000+600000
+ 503129 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,15n,117p,2378b,1046s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,13n,117p,2399b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report-slides.dvi (38 pages, 605852 bytes).
+Output written on report-slides.dvi (28 pages, 433368 bytes).
